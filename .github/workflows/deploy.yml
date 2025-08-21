@@ -21,6 +21,11 @@ jobs:
       - name: application.yml 파일 만들기
         run: echo "${{secrets.APPLICATION_PROPERTIES}}" > src/main/resources/application.yml
 
+      - name: Test
+        run: |
+          ls
+          pwd
+
       - name: 권한주기
         run: chmod +x gradlew
 
