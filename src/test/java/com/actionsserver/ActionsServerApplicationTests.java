@@ -8,7 +8,6 @@ class ActionsServerApplicationTests {
 
     @Test
     void contextLoads() {
-        throw new RuntimeException("Fail!");
     }
 
 }
