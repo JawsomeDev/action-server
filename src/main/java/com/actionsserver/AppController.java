@@ -9,6 +9,6 @@ public class AppController {
 
     @GetMapping("/")
     public String home(){
-        return "Hiii World";
+        return "Hi Hi World";
     }
 }
