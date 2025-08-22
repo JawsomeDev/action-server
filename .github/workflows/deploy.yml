@@ -53,7 +53,7 @@ jobs:
           envs: APPLICATION_PROPERTIES
           script_stop: true
           script: |
-            rm -rf /home/ubuntu/actions-server/current
+            rm -rf /home/ubuntu/action-server/current
             mkdir /home/ubuntu/action-server/current
             mv /home/ubuntu/action-server/tobe/project.jar /home/ubuntu/action-server/current/project.jar
             cd /home/ubuntu/action-server/current
