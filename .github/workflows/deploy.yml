@@ -47,7 +47,7 @@ jobs:
       - name: Debug AWS identity & bucket
         run: |
             aws sts get-caller-identity
-            aws s3api get-bucket-location --bucket action-server
+            aws s3api get-bucket-location --bucket action-test-server
             aws s3 ls s3://action-test-server || true
 
       - name: S3에 프로젝트 폴더 업로드하기
