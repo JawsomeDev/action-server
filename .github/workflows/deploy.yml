@@ -42,7 +42,7 @@ jobs:
         run: docker build -t github-action-server .
 
       - name: Docker 이미지 태그 붙이기
-        run: docker tag action-server ${{ steps.login-ecr.outputs.registry}}/github-action-server:latest
+        run: docker tag github-action-server ${{ steps.login-ecr.outputs.registry}}/github-action-server:latest
 
       - name: ECR에 Docker 이미지 Push
         run: docker push ${{ steps.login-ecr.outputs.registry}}/github-action-server:latest
